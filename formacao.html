@@ -11,9 +11,10 @@
     <link rel="icon" href="icons/android-chrome-512x512.png">
     <!-- conecta minha pagina ao fontsAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="script.js"></script>
 </head>
 
-<body>
+<body onload="calcularIdade()">
     <!-- Header da pagina -->
     <header class="colorNav">
         <H1>Marcos Della Justina Schulz</H1>
@@ -34,9 +35,9 @@
         <!-- Barra lateral com meus dados basicos -->
         <aside>
             <img id="fotoPerfil" src="images/minha_foto.jpeg" alt="Minha Foto" width="200px" height="200px">
-            <ul>
+            <ul class="navUl">
                 <li>Ocupação: Web-Developer</li>
-                <li>Idade: 26</li>
+                <li>Idade: <span id="resultado"></span></li>
                 <li>Onde Nasci: Orleans/SC</li>
             </ul>
         </aside>
@@ -49,28 +50,29 @@
             <p>Fora estas formações superiores, tenho certificado em alguns cursos que fiz on-line com instrutores muito
                 capacitados, tanto que pude abrir espaço na carreira como Desenvolvedor e hoje atuo como tal, graças a
                 alguns dos cursos citados abaixo. Dentre eles estão:</p>
-            <ul>
-                <li><a target="_blank"
-                        href="https://www.udemy.com/certificate/UC-32237bbd-e12e-494c-9e93-819f2eef5d24/">Java Completo,
-                        Programação Orientada a objetos e projetos - DevSuperior</a></li>
-                <li><a target="_blank"
-                        href="https://www.udemy.com/certificate/UC-c35873d7-c086-414e-88c3-dbae51dd400f/">Microservices
-                        do 0 com Spring Cloud, Spring Boot e Docker - Leandro Costa</a></li>
-                <li><a target="_blank" href="https://youtube.com/playlist?list=PL8iIphQOyG-DHLpEx1TPItqJamy08fs1D">Curso
-                        de Spring Boot: Criando uma aplicação Java Web - Michelli Brito</a></li>
-                <li><a target="_blank" href="https://www.youtube.com/watch?v=D4frmIHAxEY&t=1612s">Seu primeiro projeto
-                        web no Spring Boot - DevSuperior</a></li>
-                <li><a target="_blank"
-                        href="https://youtube.com/playlist?list=PL62G310vn6nFBIxp6ZwGnm8xMcGE3VA5H">Spring Boot
-                        Essentials 2 - DevDojo</a></li>
-                <li><a target="_blank"
-                        href="https://youtube.com/playlist?list=PLnDvRpP8Bnex2GQEN0768_AxZg_RaIGmw">Angular - Hora de
-                        Codar</a></li>
-                <li><a target="_blank" href="https://www.youtube.com/watch?v=dJNOJ9Xj0r4">Mergulho Spring REST -
-                        AlgaWorks</a></li>
-                <li><a target="_blank" href="https://www.rocketseat.com.br/">Trilhas Conectar e Fundamentar -
-                        RocketSeat</a></li>
-            </ul>
+            
+            <div class="menu-vertical">
+                <a class="navA" target="_blank"
+                    href="https://www.udemy.com/certificate/UC-32237bbd-e12e-494c-9e93-819f2eef5d24/">Java Completo,
+                    Programação Orientada a objetos e projetos - DevSuperior</a>
+                <a class="navA" target="_blank"
+                    href="https://www.udemy.com/certificate/UC-c35873d7-c086-414e-88c3-dbae51dd400f/">Microservices
+                    do zero com Spring Cloud, Spring Boot e Docker - Leandro Costa</a>
+                <a class="navA" target="_blank" href="https://youtube.com/playlist?list=PL8iIphQOyG-DHLpEx1TPItqJamy08fs1D">Curso
+                    de Spring Boot: Criando uma aplicação Java Web - Michelli Brito</a>
+                <a class="navA" target="_blank" href="https://www.youtube.com/watch?v=D4frmIHAxEY&t=1612s">Seu primeiro projeto
+                    web no Spring Boot - DevSuperior</a>
+                <a class="navA" target="_blank"
+                    href="https://youtube.com/playlist?list=PL62G310vn6nFBIxp6ZwGnm8xMcGE3VA5H">Spring Boot
+                    Essentials 2 - DevDojo</a>
+                <a class="navA" target="_blank"
+                    href="https://youtube.com/playlist?list=PLnDvRpP8Bnex2GQEN0768_AxZg_RaIGmw">Angular - Hora de
+                    Codar</a>
+                <a class="navA" target="_blank" href="https://www.youtube.com/watch?v=dJNOJ9Xj0r4">Mergulho Spring REST -
+                    AlgaWorks</a>
+                <a class="navA" target="_blank" href="https://www.rocketseat.com.br/">Trilhas Conectar e Fundamentar -
+                        RocketSeat</a>
+            </div>
             <p>E fora estes, muitos ainda estão por vir.</p>
 
             <p>Quando mais jovem também realizei e possuo certificação nos seguintes cursos:</p>

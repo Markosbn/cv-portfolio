@@ -11,9 +11,11 @@
     <link rel="icon" href="icons/android-chrome-512x512.png">
     <!-- conecta minha pagina ao fontsAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- importa script -->
+    <script src="script.js"></script>
 </head>
 
-<body>
+<body onload="calcularIdade()">
     <!-- Header da pagina -->
     <header class="colorNav">
         <H1>Marcos Della Justina Schulz</H1>
@@ -34,9 +36,9 @@
         <!-- Barra lateral com meus dados basicos -->
         <aside>
             <img id="fotoPerfil" src="images/minha_foto.jpeg" alt="Minha Foto" width="200px" height="200px">
-            <ul>
+            <ul class="navUl">
                 <li>Ocupação: Web-Developer</li>
-                <li>Idade: 26</li>
+                <li>Idade: <span id="resultado"></span></li>
                 <li>Onde Nasci: Orleans/SC</li>
             </ul>
         </aside>
@@ -45,31 +47,31 @@
         <section>
             <h3>Sobre Mim</h3>
             <p>Ola, me chamo Marcos Della Justina Schulz, e hoje vou guia-lo nesta jornada que é me conhecer! Hahaha,
-                brincadeira a parte, vamos ao que interessa.</p>
+                brincadeiras a parte, vamos ao que interessa.</p>
             <p>Nasci em 21 de Março de 1997, em uma cidade pequena do interior de Santa Catarina, a encantadora Orleans,
-                e vivi toda minha vida em uma cidade vizinha, onde moro até hoje chamada Braço do Norte. Posso dizer que
+                e vivi toda minha vida em uma cidade vizinha, onde moro até hoje, chamada Braço do Norte. Posso dizer que
                 é uma cidade boa de se viver, onde encontramos de tudo, menos um "cineminha" pra gente se divertir, o
                 que não é problema afinal encontramos um a 30 minutos de carro daqui.</p>
             <p>Bom, meus pais são Mario Filippe Schulz e Ana Celita Della Justina Schulz, tenho como irmãos a Larissa
-                Della Justna Schulz e Maycon Della Justina Schulz In memoriam.Não possuo filhos, sou solteiro
+                Della Justna Schulz e o Maycon Della Justina Schulz In memoriam. Não possuo filhos, sou solteiro
                 legalmente, e tenho alguns passatempos um tanto quanto ecléticos. São eles:</p>
             <ul>
-                <li>Ouvir Musica!</li>
-                <li>Estudar Programação!</li>
+                <li>Ouvir música!</li>
+                <li>Estudar programação!</li>
                 <li>Frequentar bares e pubs!</li>
                 <li>Ir a shows, concertos e festas eletrônicas!</li>
-                <li>Sair para jantar ou apreciar um ótimo Hamburger!</li>
-                <li>Jogar Vídeo Game!</li>
+                <li>Sair para jantar ou apreciar um ótimo hambuguer!</li>
+                <li>Jogar vídeo game!</li>
                 <li>Assistir filmes e séries!</li>
                 <li>E as vezes só sair, para espairecer!</li>
             </ul>
             <p>Quando criança tinha o sonho de ser um artista, daqueles que detona na guitarra, um jogador profissional
-                de video game ou então trabalhar na area do TI! Acabei deixando a guitarra de lado, o video game como um
-                hobby e focando na area do TI.</p>
+                de vídeo game ou então trabalhar na área do TI! Acabei deixando a guitarra de lado, o vídeo game como um
+                hobby e focando na área do TI.</p>
             <p>Comecei a trabalhar desde jovem e estudar bastante, mantendo a escola sempre com ótimas notas, e sempre
                 que possível e podia, fazia cursos para agregar conhecimento a aquela jovem cabeça!</p>
             <p>Hoje com 26 anos, estou muito feliz, podendo dar o meu melhor trabalhando e aprendendo como um
-                Desenvolvedor Junior!</p>
+                Desenvolvedor Júnior!</p>
         </section>
     </div>
 

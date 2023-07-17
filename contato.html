@@ -11,9 +11,10 @@
     <link rel="icon" href="icons/android-chrome-512x512.png">
     <!-- conecta minha pagina ao fontsAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="script.js"></script>
 </head>
 
-<body>
+<body onload="calcularIdade()">
     <!-- Header da pagina -->
     <header class="colorNav">
         <H1>Marcos Della Justina Schulz</H1>
@@ -32,14 +33,14 @@
     <div class="container">
         <aside>
             <img id="fotoPerfil" src="images/minha_foto.jpeg" alt="Minha Foto" width="200px" height="200px">
-            <ul>
+            <ul class="navUl">
                 <li>Ocupação: Web-Developer</li>
-                <li>Idade: 26</li>
+                <li>Idade: <span id="resultado"></span></li>
                 <li>Onde Nasci: Orleans/SC</li>
             </ul>
         </aside>
 
-        <form action="" method="post">
+        <form>
             <h3>Entre em contato comigo: </h3>
             <label for="nome">Nome:</label>
             <input type="text" name="nome" id="nome" placeholder="Nome">
@@ -54,7 +55,7 @@
             <textarea name="text" id="text" cols="50" rows="10" placeholder="Digite aqui sua mensagem..."></textarea>
             <br>
             <br>
-            <input id="button" type="submit" value="Enviar">
+            <input id="button" type="submit" value="Enviar" onclick="onEnviar()">
         </form>
     </div>
     <!-- Foter com links para meus contatos -->
