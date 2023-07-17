@@ -1,0 +1,137 @@
+/* define a fonte da pagina */
+body {
+    background-color: #F2F2F2;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* header com fundo preto, centrado texto e colocado sombra vindo antes do texto */
+header {
+    display: flex;
+    color: #F2F2F2;
+    text-shadow: #8C8C8C -2px 0;
+    justify-content: center;
+}
+
+/* remove efeito de lista posiciona sem margem */
+.navUl{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/* joga o footer para o fim da pagina e ajusta o tamanho  */
+.navUlFooter {
+    list-style-type: none;
+    margin-bottom: 0;
+    padding: 0;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+  /* posição dos icones footer */
+.navLiFooter {
+    float: inline-end;
+}
+
+/* formato do footer */
+.navLiFooter .navA{
+    display: block;
+    color: #F2F2F2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* define cor e margem dos cabeçalho para ser usado no inicio e fim da pagina margens direita e esquerda negativas para limpar espaço em brancoe espaço e define o fundo preto */
+.colorNav {
+    background-color: #0D0D0D;
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-top: -8px;
+}
+
+/* define os itens da lista para fazer o float para esquerda */
+.navLi{
+    float: left;
+}
+
+/* define os itens da lista com posição fixa cor branca padding de 14 e 16 pixel inicio e fim e sem decoração */
+.navLi .navA{
+    display: block;
+    color: #F2F2F2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* efeito de mudança de cor ao passar com o mouse sobre os itens da lista */
+.navA:hover {
+    background-color: #8C8C8C;
+}
+
+/* Deixa a foto de perfil redonda */
+#fotoPerfil {
+    border-radius: 50%;
+}
+
+/* define como grid o display */
+.container {
+    display: grid;
+}
+
+/* joga para a esquerda o aside */
+aside {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+/* joga para direta o section */
+section {
+    grid-column-start: 4;
+    grid-column-end: 12;
+    padding-left: 20px;
+}
+
+/* joga para direta o form */
+form {
+    grid-column-start: 4;
+    grid-column-end: 12;
+    padding-left: 20px;
+    margin: 0 auto;
+    width: 50%; 
+}
+
+/* alinha os inputs */
+input {
+    display: flex;
+    justify-content: center;
+}
+
+/* define o formato dos inputs */
+input, textarea {
+    border-radius: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #8C8C8C;
+    color: #F2F2F2;
+    border-color: #0D0D0D;
+}
+
+
+/* define o formato dos botoes */
+#button {
+    border-radius: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #0D0D0D;
+    color: #F2F2F2;
+    border-color: #0D0D0D;
+}
+
+/* cor dos icones */
+i {
+    color: #F2F2F2;
+}
