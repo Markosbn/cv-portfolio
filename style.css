@@ -1,5 +1,6 @@
-/* define a fonte da pagina */
-body {
+/* define a fonte da pagina e define que defe consumir a tela toda */
+body , html{
+    height: 100%;
     background-color: #F2F2F2;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -33,7 +34,7 @@ header {
 
   /* posição dos icones footer */
 .navLiFooter {
-    float: inline-end;
+    float: right;
 }
 
 /* formato do footer */
@@ -80,10 +81,16 @@ header {
 /* define como grid o display */
 .container {
     display: grid;
+    min-height: 100%;
 }
 
-/* joga para a esquerda o aside */
+/* joga para a esquerda o aside pinta o fundo e letrass */
 aside {
+    margin-left: -8px;
+    background-color: #0D0D0D;
+    color: #F2F2F2;
+    padding-top: 10px;
+    padding-left: 10px;
     grid-column-start: 1;
     grid-column-end: 3;
 }
@@ -105,7 +112,7 @@ form {
 }
 
 /* alinha os inputs */
-input {
+input, textarea {
     display: flex;
     justify-content: center;
 }
